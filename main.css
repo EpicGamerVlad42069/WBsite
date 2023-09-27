@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Chivo+Mono:wght@300&family=Dancing+Script:wght@500&family=Open+Sans&display=swap');
+body {
+    background-image: url("dtip.jpg");
+    background-size: 100% auto;
+    background-color: lightblue;
+  }
+
+  .main {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 10rem;
+    /* padding: 25rem; */
+    display: flex;
+    flex-direction: column;
+    opacity: 90%;
+    padding-bottom: 20rem;
+  }
+
+  .main p {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+    text-align: center
+  }
+
+  .main img {
+    margin-left: 7rem;
+    border-radius: 100%;
+    height: 20rem;
+    width: 20rem;
+  }
+
+  ::selection { /* Code for Firefox */
+    color: white;
+    background: #ff1277;
+  }
+  
+  /* ::-moz-selection {
+    color: white;
+    background: black;
+  } */
