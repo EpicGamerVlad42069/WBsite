@@ -24,11 +24,19 @@ body {
     text-align: center
   }
 
-  .main img {
+  .main .image {
+    width: 20rem;
+  }
+
+  .main .image img {
     margin-left: 7rem;
     border-radius: 100%;
     height: 20rem;
     width: 20rem;
+  }
+
+  .main .image p {
+    padding: auto;
   }
 
   ::selection { /* Code for Firefox */
