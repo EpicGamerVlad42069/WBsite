@@ -2,7 +2,35 @@
 <html>
     <head>
         <title>Main :3</title>
-        <link rel="stylesheet" type="text/css" href="main.css"
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js">
+            const token = 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;
+            const repoOwner = EpicGamerVlad42069;
+            const repoName = WBsite;
+
+            const commitsContainer = document.getElementById('github-commits');
+
+            axios
+                .get(`https://api.github.com/repos/${repoOwner}/${repoName}/commits`, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+                })
+                .then((response) => {
+                const commits = response.data;
+                let commitsHTML = '<h2>Latest GitHub Commits</h2><ul>';
+
+                commits.slice(0, 5).forEach((commit) => {
+                    commitsHTML += `<li><a href="${commit.html_url}" target="_blank">${commit.commit.message}</a></li>`;
+                });
+
+                commitsHTML += '</ul>';
+                commitsContainer.innerHTML = commitsHTML;
+                })
+                .catch((error) => {
+                console.error('Error fetching GitHub commits:', error);
+                });
+        </script>
     </head>
     <body>
         <div class="main">
@@ -18,6 +46,7 @@
                     <a href="https://steamcommunity.com/id/sussymongus target="_blank""><img src="steam.svg" /></a>
                 </div>
             </div>
+            <div id="github-commits"></div>
         </div>
     </body>
 </html>
