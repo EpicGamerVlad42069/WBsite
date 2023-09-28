@@ -14,14 +14,15 @@ body {
     /* padding: 25rem; */
     display: flex;
     flex-direction: column;
-    opacity: 90%;
+    opacity: 80%;
     padding-bottom: 20rem;
   }
 
   .main p {
     font-family:'Courier New', Courier, monospace;
     font-size: 2rem;
-    text-align: center
+    text-align: center;
+    opacity: 100%;
   }
 
   .main .image {
@@ -36,7 +37,21 @@ body {
   }
 
   .main .image p {
-    padding: auto;
+    padding-left: 7rem;
+    width: 20rem;
+    font-size: 1.8rem;
+  }
+
+  .main .image .icons {
+    padding-left: 11.3rem;
+    width: 20rem;
+  }
+
+  .main .image .icons img {
+    margin-left: 0px;
+    border-radius: 0%;
+    height: 2rem;
+    width: 2rem;
   }
 
   ::selection { /* Code for Firefox */
