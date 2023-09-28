@@ -43,12 +43,12 @@ body {
   }
 
   .main .image .icons {
-    padding-left: 11.3rem;
+    padding-left: 10rem;
     width: 20rem;
   }
 
   .main .image .icons img {
-    margin-left: 0px;
+    margin-left: 1rem;
     border-radius: 0%;
     height: 2rem;
     width: 2rem;
